@@ -4,14 +4,13 @@
       "es2020": true
   },
   "extends": [
-      "plugin:react/recommended",
-      "airbnb"
+      "plugin:react/recommended"
   ],
   "parserOptions": {
       "ecmaFeatures": {
           "jsx": true
       },
-      "ecmaVersion": 12,
+      "ecmaVersion": 11,
       "sourceType": "module"
   },
   "plugins": [
@@ -22,5 +21,13 @@
       "extensions": [".js", ".jsx"]}
     ],
     "semi": "off"
+  },
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "paths": ["src"],
+        "extensions": [".js", ".jsx"]
+      }
+    }
   }
 }

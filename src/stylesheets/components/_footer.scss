@@ -1,0 +1,33 @@
+.footer {
+    color: $secondary;
+    background: $white;
+}
+
+.footer__wrapper {
+    @extend %wrapper;
+
+    display: flex;
+    flex-direction: column;
+
+    > * {
+        margin-bottom: 1rem;
+    }
+}
+
+.footer__logo {
+    img {
+        max-height: 40px;
+    }
+}
+
+.footer__info {
+    @include font-size(16px);
+}
+
+.footer__social-link {
+    @include font-size(16px);
+
+    &:hover {
+        color: $primary;
+    }
+}

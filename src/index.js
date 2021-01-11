@@ -4,6 +4,8 @@ import styled from 'styled-components'
 import App from './App'
 import * as serviceWorker from './serviceWorker'
 
+import './stylesheets/application.scss'
+
 const StApp = styled(App)`
   body {
     margin: 0;

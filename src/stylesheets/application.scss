@@ -1,0 +1,25 @@
+// Mixins
+@import 'mixins/font-size';
+
+// Global Styles
+@import 'base/variables';
+
+// Base components
+@import 'base/typography';
+@import 'base/buttons';
+@import 'base/layout';
+@import 'base/wrapper';
+
+// Helpers
+@import 'base/helpers';
+
+//Components & Pages
+@import 'components/categories-list';
+@import 'components/footer';
+@import 'components/header';
+@import 'components/job-card';
+@import 'components/job-category';
+@import 'components/job-list';
+@import 'components/landing';
+@import 'components/main';
+@import 'components/main-slider';

@@ -1,0 +1,13 @@
+.landing {
+    display: flex;
+    flex-direction: column;
+    background: $gray-ef;
+}
+
+.landing__wrapper {
+    @extend %wrapper;
+
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
