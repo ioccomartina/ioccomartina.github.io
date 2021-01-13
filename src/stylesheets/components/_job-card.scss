@@ -3,6 +3,7 @@
     flex-direction: column;
     padding: 2rem;
     background: $white;
+    cursor: pointer;
     transition: transform 0.25s ease-in-out 0s, box-shadow 0.3s ease-in-out 0s;
 
     &:hover {
