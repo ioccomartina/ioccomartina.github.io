@@ -11,10 +11,10 @@ export default function Header() {
         <div className="header__logo">
           <Logo />
         </div>
-        <div className="header__menu only-md">
-          <a href="/">a</a>
-          <a href="/">b</a>
-          <a href="/">c</a>
+        <div className="header__menu">
+          <a href="/" className="header__menu-link">Sobre mi</a>
+          <a href="/" className="header__menu-link">Asesoramientos</a>
+          <a href="/" className="header__menu-link">Búsquedas IT</a>
         </div>
         <div className="header__balance only-mobile" />
       </div>

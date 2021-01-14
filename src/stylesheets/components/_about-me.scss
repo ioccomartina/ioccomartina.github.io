@@ -1,0 +1,45 @@
+.about-me {
+    min-height: 200px;
+    background: $secondary;
+}
+
+.about-me__wrapper {
+    @extend %wrapper;
+
+    display: flex;
+    flex-direction: row;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+.about-me__text {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.about-me__title {
+    @include font-size(25px);
+
+    color: $white;
+    text-align: left;
+
+    @media(min-width: $screen-md) {
+        @include font-size(40px);
+    }
+}
+
+.about-me__description {
+    @include font-size(16px);
+
+    color: $white;
+    text-align: left;
+
+    @media(min-width: $screen-md) {
+        @include font-size(18px);
+    }
+}
+
+.about-me__image {
+    flex: 1;
+}

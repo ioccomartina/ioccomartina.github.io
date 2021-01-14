@@ -10,12 +10,33 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    @media(min-width: $screen-md) {
+        justify-content: space-between;
+    }
 }
 
 .header__logo {
     img {
         max-height: 40px;
     }
+}
+
+.header__menu {
+    display: none;
+    flex-direction: row;
+
+    @media(min-width: $screen-md) {
+        display: flex;
+    }
+}
+
+.header__menu-link {
+    @include font-size(16px);
+
+    color: $white;
+    text-transform: uppercase;
+    margin-right: 2rem;
 }
 
 .header__mobile-menu {

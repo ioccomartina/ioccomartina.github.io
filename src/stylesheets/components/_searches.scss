@@ -1,0 +1,23 @@
+.searches {
+    min-height: 200px;
+    background: $secondary;
+}
+
+.searches__wrapper {
+    @extend %wrapper;
+
+    display: 'flex';
+    flex-direction: column;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+.searches__title {
+    @include font-size(25px);
+
+    color: $white;
+
+    @media(min-width: $screen-md) {
+        @include font-size(40px);
+    }
+}

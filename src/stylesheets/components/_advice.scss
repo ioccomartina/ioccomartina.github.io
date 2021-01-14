@@ -1,0 +1,45 @@
+.advice {
+    min-height: 200px;
+    background: $white;
+}
+
+.advice__wrapper {
+    @extend %wrapper;
+
+    display: flex;
+    flex-direction: row;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+.advice__text {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.advice__title {
+    @include font-size(25px);
+
+    color: $secondary;
+    text-align: right;
+
+    @media(min-width: $screen-md) {
+        @include font-size(40px);
+    }
+}
+
+.advice__description {
+    @include font-size(16px);
+
+    color: $secondary;
+    text-align: right;
+
+    @media(min-width: $screen-md) {
+        @include font-size(18px);
+    }
+}
+
+.advice__image {
+    flex: 1;
+}

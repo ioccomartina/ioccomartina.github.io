@@ -5,7 +5,7 @@ export default function MobileNav() {
   const [showMenu, setShowMenu] = useState(false)
 
   return (
-    <div>
+    <div className="only-mobile">
       {!showMenu && (
         <button
           type="button"
