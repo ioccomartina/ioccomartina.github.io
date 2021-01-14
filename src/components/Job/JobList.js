@@ -10,6 +10,9 @@ function JobList({ jobs, title, withViewAll }) {
   return (
     <div className="job-list">
       <h4 className="job-list__title">{title}</h4>
+      {jobs.length === 0 && (
+        <span className="job-list__title">No se encontraron resultados</span>
+      )}
       {jobs.map((job) => (
         <JobCard
           key={`job-card-${job.title}`}
@@ -36,11 +39,12 @@ function JobList({ jobs, title, withViewAll }) {
 
 JobList.propTypes = {
   jobs: PropTypes.array.isRequired,
-  title: PropTypes.string.isRequired,
+  title: PropTypes.string,
   withViewAll: PropTypes.bool,
 }
 
 JobList.defaultProps = {
+  title: '',
   withViewAll: false,
 }
 

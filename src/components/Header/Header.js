@@ -1,7 +1,9 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
-import MobileNav from './MobileNav'
+import { APP_URL_JOBS } from 'constants/Url'
 import Logo from 'components/Logo'
+import MobileNav from './MobileNav'
 
 export default function Header() {
   return (
@@ -14,7 +16,7 @@ export default function Header() {
         <div className="header__menu">
           <a href="/" className="header__menu-link">Sobre mi</a>
           <a href="/" className="header__menu-link">Asesoramientos</a>
-          <a href="/" className="header__menu-link">Búsquedas IT</a>
+          <Link to={APP_URL_JOBS} className="header__menu-link">Búsquedas IT</Link>
         </div>
         <div className="header__balance only-mobile" />
       </div>
