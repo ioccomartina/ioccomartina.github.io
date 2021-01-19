@@ -8,7 +8,7 @@ import JobList from 'components/Job/JobList'
 
 export default function Searches() {
   const params = parseQueryParams(useLocation().search)
-  const category = getParam(params, 'category')
+  const category = getParam(params, 'categoria')
   const filteredJobs = category
     ? JOBS.filter((job) => job.category.toLowerCase() === category.toLowerCase())
     : JOBS

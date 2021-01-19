@@ -1,6 +1,5 @@
 .footer {
-    color: $secondary;
-    background: $white;
+    background: $secondary;
 }
 
 .footer__wrapper {
@@ -49,7 +48,7 @@
     margin-bottom: 1rem;
 
     img {
-        max-height: 40px;
+        max-height: 80px;
     }
 
     @media(min-width: $screen-md) {
@@ -64,12 +63,18 @@
 .footer__resume-jobs {
     display: flex;
     flex-direction: column;
+    
+
+    @media(min-width: $screen-md) {
+        margin-right: 4rem;
+    }
 }
 
 .footer__resume-title {
     @include font-size(16px);
 
     margin-bottom: 1rem;
+    color: $primary;
 
     @media(min-width: $screen-md) {
         margin-bottom: 2rem;
@@ -80,7 +85,7 @@
     @include font-size(16px);
 
     margin-bottom: 0.5rem;
-    color: $gray-4a;
+    color: $white;
 
     @media(min-width: $screen-md) {
         margin-bottom: 1rem;
@@ -88,7 +93,9 @@
 }
 
 .footer__social-link {
-    @include font-size(16px);
+    @include font-size(20px);
+
+    color: $white;
 
     &:hover {
         color: $primary;

@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-import { APP_URL_JOBS } from 'constants/Url'
+import * as ROUTES from 'constants/Url'
 import Logo from 'components/Logo'
 import MobileNav from './MobileNav'
 
@@ -10,13 +10,17 @@ export default function Header() {
     <div className="header">
       <div className="header__wrapper">
         <MobileNav />
-        <div className="header__logo">
+        <Link
+          to={ROUTES.APP_URL_HOME}
+          className="header__logo"
+        >
           <Logo />
-        </div>
+        </Link>
         <div className="header__menu">
-          <a href="/" className="header__menu-link">Sobre mi</a>
-          <a href="/" className="header__menu-link">Asesoramientos</a>
-          <Link to={APP_URL_JOBS} className="header__menu-link">Búsquedas IT</Link>
+          <Link to={ROUTES.APP_URL_HOME} className="header__menu-link">Home</Link>
+          <a href={`${ROUTES.APP_URL_HOME}#section-sobre-mi`} className="header__menu-link">Sobre mi</a>
+          <a href={`${ROUTES.APP_URL_HOME}#section-asesoramiento`} className="header__menu-link">Asesoramientos</a>
+          <Link to={ROUTES.APP_URL_JOBS} className="header__menu-link">Búsquedas IT</Link>
         </div>
         <div className="header__balance only-mobile" />
       </div>

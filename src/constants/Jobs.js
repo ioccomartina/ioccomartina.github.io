@@ -1,5 +1,6 @@
 export default [
   {
+    id: "1000",
     name: "Tester SSr (Caja negra)",
     description: "La empresa desarrolla inteligencia artificial orientada a los negocios financieros. Es un excelente lugar donde crecer mientras te capacitas en las últimas tecnologías. Gran ambiente de trabajo, colaborativo y sin competencia.",
     exclusive_requirements: [
@@ -47,9 +48,11 @@ export default [
     featured: false,
     category: "QA",
     mode: "Remoto/On Site",
-    contract: "Relación de dependencia"
+    contract: "Relación de dependencia",
+    consultant: "BudaIT"
   },
   {
+    id: "",
     name: "Tester SSr (Caja negra)",
     description: "La empresa desarrolla inteligencia artificial orientada a los negocios financieros. Es un excelente lugar donde crecer mientras te capacitas en las últimas tecnologías. Gran ambiente de trabajo, colaborativo y sin competencia.",
     exclusive_requirements: [
@@ -97,9 +100,11 @@ export default [
     featured: true,
     category: "QA",
     mode: "Remoto",
-    contract: "Freelance"
+    contract: "Freelance",
+    consultant: "BudaIT"
   },
   {
+    id: "",
     name: "Tester SSr (Caja negra)",
     description: "La empresa desarrolla inteligencia artificial orientada a los negocios financieros. Es un excelente lugar donde crecer mientras te capacitas en las últimas tecnologías. Gran ambiente de trabajo, colaborativo y sin competencia.",
     exclusive_requirements: [
@@ -147,9 +152,11 @@ export default [
     featured: false,
     category: "QA",
     mode: "Remoto",
-    contract: "Freelance"
+    contract: "Freelance",
+    consultant: "BudaIT"
   },
   {
+    id: "",
     name: "Tester SSr (Caja negra)",
     description: "La empresa desarrolla inteligencia artificial orientada a los negocios financieros. Es un excelente lugar donde crecer mientras te capacitas en las últimas tecnologías. Gran ambiente de trabajo, colaborativo y sin competencia.",
     exclusive_requirements: [
@@ -197,6 +204,7 @@ export default [
     featured: true,
     category: "QA",
     mode: "On site",
-    contract: "Freelance"
+    contract: "Freelance",
+    consultant: "BudaIT"
   }
 ]

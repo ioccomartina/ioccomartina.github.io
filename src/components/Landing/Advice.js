@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function Advice() {
   return (
-    <div className="advice">
+    <div className="advice" id="section-asesoramiento">
       <div className="advice__wrapper">
         <div className="advice__image">
         </div>

@@ -10,7 +10,7 @@ function JobCategory({ amount, icon, name}) {
 
   return (
     <Link
-      to={`${APP_URL_JOBS}?category=${name}`}
+      to={`${APP_URL_JOBS}?categoria=${name}`}
       className="job-category"
     >
       <span className="job-category__name">{name}</span>
