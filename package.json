@@ -2,6 +2,7 @@
   "name": "ioccomartina",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://ioccomartina.github.io/",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.32",
     "@fortawesome/free-brands-svg-icons": "^5.15.1",
@@ -34,7 +35,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "yarn run build",
-    "deploy": "gh-pages -d build --branch main"
+    "deploy": "gh-pages -d build --branch main --remote tini"
   },
   "eslintConfig": {
     "extends": "react-app"
