@@ -6,9 +6,16 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { APP_URL_JOBS } from 'constants/Url'
 import JobCard from './JobCard'
 
-function JobList({ jobs, title, withViewAll }) {
+function JobList(props) {
+  const {
+    jobs,
+    jobListRef,
+    title,
+    withViewAll,
+  } = props
+
   return (
-    <div className="job-list">
+    <div className="job-list" ref={jobListRef}>
       <h4 className="job-list__title">{title}</h4>
       {jobs.length === 0 && (
         <span className="job-list__title">No se encontraron resultados</span>
@@ -39,6 +46,7 @@ function JobList({ jobs, title, withViewAll }) {
 
 JobList.propTypes = {
   jobs: PropTypes.array.isRequired,
+  jobListRef: PropTypes.object,
   title: PropTypes.string,
   withViewAll: PropTypes.bool,
 }

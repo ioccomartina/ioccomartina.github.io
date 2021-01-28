@@ -1,6 +1,8 @@
 import React, { useState } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
+import MobileMenu from './MobileMenu'
+
 export default function MobileNav() {
   const [showMenu, setShowMenu] = useState(false)
 
@@ -24,6 +26,9 @@ export default function MobileNav() {
         >
           <FontAwesomeIcon icon="times" />
         </button>
+      )}
+      {showMenu && (
+        <MobileMenu closeMenu={() => setShowMenu(false)} />
       )}
     </div>
   )

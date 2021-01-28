@@ -1,7 +1,10 @@
 .header {
+    position: sticky;
+    top: 0;
     height: $header-height;
     color: $white;
     background: $secondary;
+    z-index: $header-z-index;
 }
 
 .header__wrapper {

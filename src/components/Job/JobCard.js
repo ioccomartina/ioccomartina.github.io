@@ -66,7 +66,7 @@ JobCard.propTypes = {
     consultant: PropTypes.string.isRequired,
     contract: PropTypes.string.isRequired,
     experience: PropTypes.string.isRequired,
-    id: PropTypes.number.isRequired,
+    id: PropTypes.string.isRequired,
     kindPosition: PropTypes.string.isRequired,
     location: PropTypes.string.isRequired,
     mode: PropTypes.string.isRequired,

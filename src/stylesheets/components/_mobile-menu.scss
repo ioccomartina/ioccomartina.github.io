@@ -1,0 +1,16 @@
+.mobile-menu {
+    @extend %wrapper;
+
+    display: block;
+    position: fixed;
+    top: $header-height;
+    right: 0;
+    z-index: $mobile-nav-z-index;
+    width: 100%;
+    height: auto;
+    background: $secondary;
+
+    > * {
+        margin-bottom: 1rem;
+    }
+}

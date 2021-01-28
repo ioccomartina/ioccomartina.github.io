@@ -7,7 +7,7 @@
     transition: transform 0.25s ease-in-out 0s, box-shadow 0.3s ease-in-out 0s;
 
     &:hover {
-        z-index: $mobile-nav-z-index;
+        z-index: $job-card-z-index;
         box-shadow: $box-shadow-hover;
         transform: scale(1.02);
     }

@@ -9,7 +9,7 @@ export default function CategoriesList() {
     <div className="categories-list">
       {list.map((category) => (
         <JobCategory
-          key={`job-category-${name}`}
+          key={`job-category-${category.name}`}
           amount={amountOfJobs(category.name)}
           icon={category.icon}
           name={category.name}
